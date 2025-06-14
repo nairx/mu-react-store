@@ -18,7 +18,7 @@ export default function Login() {
     if (!res.data) {
       setError("Access Denied");
     } else {
-      setEmail(res.email);
+      setEmail(res.data);
       Navigate("/");
     }
   };
